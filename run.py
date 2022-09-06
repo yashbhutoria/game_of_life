@@ -10,6 +10,8 @@ screen = pygame.display.set_mode(SCREEN_SIZE)
 
 canvas = Canvas(rows=SCREEN_SIZE[1] // 5, columns=SCREEN_SIZE[0] // 5)
 canvas.add_life(life=GOSPELS_GLIDER_GUN, x=10, y=10)
+canvas.add_life(life=GOSPELS_GLIDER_GUN, x=30, y=10)
+canvas.add_life(life=PULSAR, x=50, y=10)
 game = GameOfLife(screen=screen, initial_state=canvas.get_canvas(), refresh_delay=0)
 
 pygame.init()
